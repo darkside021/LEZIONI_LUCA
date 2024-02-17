@@ -1,0 +1,611 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+:root{
+    --main-color:#5620a0;
+    --black:#222;
+    --white:#fff;
+    --light-black:#777;
+    --light-white:fff9;
+    --dark-bg:rgba(0,0,0,.7);
+    --light-bg:#eee;
+    --border:.1rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    --text--shadow: 0 1.5rem 3rem rgba(0,0,0,.3);
+
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration:none;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{width:1rem;}
+html::-webkit-scrollbar-track
+{background-color: var(--white);}
+html::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+
+section{
+    padding:5rem 10%;
+}
+
+@keyframes fadeIn{
+    0%{
+        transform: scale(.5);
+        opacity: 0;
+    }
+}
+.heading{
+    background-size: cover !important;
+    background-position: center !important;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+
+.heading h1{
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: var(--white);
+    text-shadow: var(--text--shadow);
+}
+
+.btn{
+    display: inline-block;
+    background:var(--black);
+    margin-top: 1rem;
+    color: var(--white);
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background: var(--main-color);
+}
+
+.heading-title{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--light-white);
+}
+
+.header{
+	position:sticky;
+	top:0;left:0;right:0;
+	z-index: 1000;
+	background-color: var(--main-color); /* Cambia qui */
+	display: flex;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	box-shadow: var(--box-shadow);
+	align-items: center;
+	justify-content: space-between;
+ }
+ 
+    .header .logo{
+        font-size: 2.5rem;
+        color:var(--white);
+    }
+    .header .navbar a{
+        font-size: 2.5rem;
+        margin-left: 2rem;
+        color:var(--light-bg);
+    }
+    .header .navbar a:hover{
+        color:var(--black);
+    }
+
+#menu-btn{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--white);
+    display: none;
+}
+
+.home{
+    padding: 0;
+}
+
+.home .slide{
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover !important;
+    background-position: center !important;
+    min-height: 60rem;
+}
+
+.home .slide .content{
+    width: 85rem;
+    display: none;
+}
+
+.home .swiper-slide-active .content{
+    display: inline-block;
+}
+.home .slide .content span{
+    display: block;
+    font-size: 2.2rem;
+    color: var(--light-white);
+    padding-bottom: 1rem;
+    animation:fadeIn .4s linear backwards .4s;
+}
+
+.home .slide .content h3{
+font-size: 6vw;
+color: var(--white);
+text-transform: uppercase;
+line-height: 1;
+text-shadow: var(--text--shadow);
+padding: 1rem 0;
+animation: fadeIn .4s linear backwards .6s;
+}
+
+.home .slide .content .btn{
+    animation: fadeIn .4s linear backwards .6s;
+}
+
+.home .swiper-button-next,
+.home .swiper-button-prev{
+    top: inherit;
+    left: inherit;
+    bottom: 0;
+    right: 0;
+    height: 7rem;
+    width: 7rem;
+    background: var(--white);
+    color: var(--white);
+}
+
+.home .swiper-button-next:hover,
+.home .swiper-button-prev:hover{
+    background: var(--main-color);
+    color: var(--white);
+}
+
+.home .swiper-button-next::after,
+.home .swiper-button-prev:after{
+    font-size: 2rem;
+}
+.home .swiper-button-prev{
+    right: 7rem;
+}
+
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
+}
+
+.services .box-container .box{
+padding: 3rem 2rem;
+text-align: center;
+background: var(--main-color);
+}
+
+.services .box-container .box:hover{
+    background: var(--black);
+    }
+.services .box-container .box img{
+    height:7rem;
+        }
+.services .box-container .box h3{
+color: var(--white);
+font-size: 1.7rem;
+padding-top: 1rem;        }
+
+
+
+
+.home-my-account {
+    background: var(--light-bg);
+}
+
+.home-my-account .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem; 
+}
+
+/* ... rest of the styles.css file ... */
+
+.catalogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catalogo .button {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.catalogo .button .btn {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.catalogo .button .btn:hover {
+    background-color: var(--main-color);
+}
+
+.catalogo .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Se vuoi allineare tutti gli elementi figli a sinistra */
+}
+
+.catalogo .content h3 {
+    font-size: 5rem;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.catalogo .content .container .icons h2 {
+    margin-top: 30px; /* Adjust this value as needed */
+}
+.catalogo .content h2 {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.catalogo .content .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.catalogo .content .container .icons {
+    display: flex;
+    align-items: left;
+    background: var(--white);
+    gap: 2rem;
+    
+}
+.catalogo .content .container .h4 {
+    display: flex;
+    align-items: left;
+    background: var(--white);
+    gap: 2rem;
+    
+}
+.catalogo .content .container .icons img {
+    width: 10%;
+        margin-left: 0;
+    
+    height: auto;
+
+}
+
+.catalogo .content .container .icons span {
+    font-size: 1.5rem;
+    text-transform: none;
+    color: var(--light-black);
+    flex-grow: 1;
+    margin-top: 20px;
+
+}
+
+.catalogo .content .container .icons a.link-dark
+{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.catalogo .content .container .icons a.link-dark i.fa-solid {
+    font-size: 18px;
+    color: #000;
+}
+
+.catalogo .content .container .icons a.link-dark:hover i.fa-solid {
+    color: var(--main-color);
+    
+}
+
+.edit {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.edit .content {
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit .content h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem; /* Increased font size */
+    color: #58161d;
+}
+
+.edit .content .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit .content .container label {
+    margin-bottom: 1rem;
+    font-size: 1.2rem; /* Increased font size */
+}
+
+.edit .content .container textarea,
+.edit .content .container input[type="file"],
+.edit .content .container input[type="submit"] {
+    margin-bottom: 1rem;
+    font-size: 1.2rem; /* Increased font size */
+
+}
+
+.edit .content .container input[type="submit"] {
+    cursor: pointer;
+    padding: 1rem;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.favorites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .favorites .content {
+    width: 100%;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 5px;
+  }
+  
+  .favorites .content h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+  
+  }
+  
+  .favorites .content .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+  
+  }
+  
+  .favorites .content .container .favorite-drink {
+      display: flex;
+      justify-content: flex-start; /* Align items to the left */
+      align-items: flex-start;
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+  }
+  
+  .favorites .content .container .favorite-drink:last-child {
+    border-bottom: none;
+  
+  }
+  
+  .favorites .content .container .favorite-drink .make-drink-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .favorites .content .container .favorite-drink .make-drink-link:hover {
+    color: #0056b3;
+  }
+  
+  .favorites .content .container .favorite-drink .delete-link {
+    color: #dc3545;
+    text-decoration: none;
+  }
+  
+  .favorites .content .container .favorite-drink .delete-link:hover {
+    color: #c82333;
+  }
+.drink-container {
+    position: relative;
+}
+
+.drink-title {
+    position: absolute;
+    top: 10px; /* Ajusta questa proprietà per posizionare il titolo dove preferisci */
+    left: 10px; /* Ajusta questa proprietà per posizionare il titolo dove preferisci */
+    color: white; /* Cambia il colore del testo se necessario */
+}
+
+.drink-name {
+    max-width: 550px; /* Imposta la larghezza massima del contenitore del nome del drink */
+    white-space: nowrap; /* Impedisce al testo di andare a capo */
+    overflow: hidden; /* Nasconde il testo che supera la larghezza massima */
+}
+.drink-name-container {
+    margin-right: 250px; /* Imposta il margine destro */
+}
+
+.delete-link {
+    position: absolute;
+    right: 450px;
+    white-space: nowrap; /* Impedisce ai link di andare a capo */
+}
+
+
+
+
+.footer{
+    background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgICAcICAgHCAgIBwoHCAgIBw8ICQgKFREiFhURExMYHSggGBolGxMTITEhJSkrOi4uFx8zODMsNyg5LisBCgoKDQ0NDg0NDy0ZFRktKystKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAGYB7QMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAAAAQIDB//EACMQAQEBAQAABgEFAAAAAAAAAAABEQIDITFBUXGxEmGBkaH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDzABqzAAAASyVLz8NCK5q2zYCCAKAAAAAAACAAJRAKCAM1UB28PrZ+88q24+Hsv7XyrsIAKAAAAAAAADnmOidTQYajIitiRQFQBUABz65z6dAHEjXUxkGhJVBRFAAEUQB0AUAAAAAEURUAS8/CgMeg2l5BkMsAAAAQFQQFQy1r9PyDBldMgDH6flckVASuvN2f45VeLl+/IHUBUAAAAAAAAAAZ6nuy6OdmVBYrKwVoAAAAAEs1zsx1TqaDksEBoSKCiKAADoAqAAAAACKAAgAAACXmfSgMWWJrol5lBz1Zt9mpzIugzOflckAFQAAQBFqAlRagO3N2b/auXh3Lnz+XVUAAAAAAAAAAEs1QHMa6nuyitRWVBQAAAAAZ6537YdWe+feA5+iiA0IoCoA6gKgAAAAAigACKAgqaAGoC6gAItRQAAAQEWoIVKqUVKFAR25uyVxa8K5c+fyDqAqAAAAAAAAAADnZjolmgwsQRWlSAKAAAAADHfPvGXVz65z6BlUAaEUHUBUAAAAAABAFTREUAAAAABAFAAABAqAIJQFSgAiKlB35uyVXLwr558+jqqAAAAAAAAAAAAM9T3ZdHPqYgNMrBWhFAAAAAKAOfUxmutmudmAkVKaDuAqAICiCAAKAgAAAAAACAoAAAIAIAACCpgILhgMo1hgMzyd5dkrjjfh31n8wHQBUAAAAAAAAAAEs1QHMa6nuwitRWWpQURQAAAAE6mqA5VHTqb9uYOwAAAAAAAIAAAAAAIAAKAAAAAAACAABiYAgYgAenmArqAIAKAAAAAAAAAADHUyoIqLABoABQAAAQAEvOoA//9k=) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer .box-container{ /*divisione in colonne*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+}
+
+.footer .box-container .box h3{ /*titoli*/
+    color: var(--white);
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+
+}
+
+.footer .box-container .box a{ /*sottocategorie*/
+    color: var(--light-bg);
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    display: block; 
+}
+
+.footer .box-container .box a i{ /*simboli*/
+    color: palegreen;
+    padding-right: .5rem;  
+    transition: .2s linear;
+}
+
+.footer .box-container .box a:hover i{ /*animazione spostamento*/
+    padding-right: 5rem;  
+}  
+
+.footer .credit{  /*crediti*/
+    padding-top: 3rem;
+    margin-top: 3rem;
+    border-top: 0.1rem solid var(--white);
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.footer .credit span{
+
+    color: palegreen;
+}
+.drink-image {
+    width: 100%; /* This will make the image take up the full width of its container */
+    height: auto; /* This will maintain the aspect ratio of the image */
+    object-fit: cover; /* This will ensure that the image covers the entire content box, potentially cropping the image in the process */
+}
+
+
+/*media queries*/
+
+@media ( max-width:1200px)
+{
+section{
+    padding: 3rem 5%;
+}
+}
+
+@media ( max-width:991px)
+{
+    html{
+        font-size: 55%;
+    }
+section{
+    padding: 3rem 2rem;
+}
+}
+.home .slide .content h3{
+    font-size: 7vw;
+}
+
+
+@media (max-width: 768px) {
+    #menu-btn {
+        display: inline-block;
+        transition: .2s linear;
+        color: var(--black);
+    }
+
+    #menu-btn.fa-times {
+        transform: rotate(180deg);
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background-color: var(--black);
+        border-top: var(--border);
+        padding: 2rem;
+        transition: 0.5s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .navbar a {
+        display: block;
+        margin: 2rem;
+        text-align: center;
+    }
+  /* Styles for devices with a width less than 768px */
+    .favorites .content {
+        padding: 1rem; /* Reduce padding for smaller screens */
+    }
+
+    .favorites .content .container .favorite-drink {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center items horizontally */
+        margin-bottom: 1rem; /* Add some space between items */
+    }
+
+    .favorites .content .container .favorite-drink .drink-name-container {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 0.5rem; /* Add space below the drink name */
+    }
+
+    .favorites .content .container .favorite-drink .delete-link,
+    .favorites .content .container .favorite-drink .make-drink-link {
+        position: static; /* Reset position */
+        margin-top: 0.5rem; /* Add space above the links */
+    }
+}
+
+/* Styles for devices with a width less than 576px */
+@media (max-width: 576px) {
+    .favorites .content h1 {
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+    }
+
+    .favorites .content .container .favorite-drink .drink-name {
+        font-size: 1.2rem; /* Reduce font size for drink names */
+    }
+}
