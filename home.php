@@ -1,4 +1,8 @@
+
 <?php
+/*
+<?php
+
 include "database.php";
 
 session_start();
@@ -23,7 +27,7 @@ $result = mysqli_query($conn, $sql);
 while ($row = mysqli_fetch_assoc($result)) {
     echo "<p>" . $row['content'] . "</p>";
 }
-?>
+?>*/
 ?>
 
 <!DOCTYPE <html>
